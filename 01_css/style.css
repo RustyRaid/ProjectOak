@@ -568,42 +568,38 @@
 }
 
 .fifth-container .about-content .right-content .about-item1 img,
+.fifth-container .about-content .right-content .about-item2 img,
+.fifth-container .about-content .right-content .about-item3 img {
+   object-fit: cover;
+   object-position: center center;
+   border-radius: 42px;
+   position: absolute;
+}
+
+.fifth-container .about-content .right-content .about-item1 img,
 .fifth-container .about-content .right-content .about-item3 img {
    width: 205px;
    height: 205px;
-   object-fit: cover;
-   border-radius: 42px;
 }
 
 .fifth-container .about-content .right-content .about-item2 img {
    width: 335px;
    height: 335px;
-   object-fit: cover;
-   border-radius: 42px;
 }
 
 .fifth-container .about-content .right-content .about-item1 img {
-   position: absolute;
    left: 220px;
    top: 15px;
-   object-fit: cover;
-   object-position: center center;
 }
 
 .fifth-container .about-content .right-content .about-item2 img {
-   position: absolute;
    left: 0px;
    top: 135px;
-   object-fit: cover;
-   object-position: center center;
 }
 
 .fifth-container .about-content .right-content .about-item3 img {
-   position: absolute;
    left: 190px;
    top: 495px;
-   object-fit: cover;
-   object-position: center center;
 }
 
 /* Sixth Container - Questions */
@@ -755,8 +751,8 @@
 .sixth-container .question-content .question-bottom-content .right-info .slab img {
    object-fit: cover;
    position: absolute;
-   left: 220px;
-   top: 225px;
+   left: 0px;
+   top: 240px;
 }
 
 /* Ninth Container - Contact */
