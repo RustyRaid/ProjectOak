@@ -12,58 +12,86 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@500;700&family=Saira:wght@500;700&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="./03_fonts/fonts.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-   <link rel="stylesheet" href="./01_css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <link rel="stylesheet" href="./01_css/owl.carousel.min.css">
+   <link rel="stylesheet" href="./01_css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="./01_css/reset.css">
    <link rel="stylesheet" href="./01_css/media.css">
+   <link rel="stylesheet" href="./01_css/style.css">
 </head>
 
 <body>
+   <div class="wrapper">
 
-   <!-- First Container -->
+      <!-- First containr - Header -->
 
-   <section class="first-container">
-      <header class="center">
-         <div class="change-logo animate__animated animate__fadeInDown">
-            <div class="logo">
-               <a href="./home.html">
-                  <img src="./04_images/01_header/logo_white.svg" alt="logo">
-               </a>
+      <section class="first-container">
+         <div class="banner-bg"></div>
+         <div class="banner-gr"></div>
+         <header class="center2">
+            <div class="change-logo animate__animated animate__fadeInDown wow">
+               <div class="logo">
+                  <a href="./index.html">
+                     <img src="./04_images/01_header/logo_white.svg" alt="Logo">
+                  </a>
+               </div>
+               <div class="logo">
+                  <a href="./index.html">
+                     <img src="./04_images/01_header/logo_blue.svg" alt="Logo">
+                  </a>
+               </div>
             </div>
-            <div class="logo">
-               <a href="./home.html">
-                  <img src="./04_images/01_header/logo_blue.svg" alt="logo">
-               </a>
+            <nav class="menu">
+               <ul>
+                  <li>
+                     <a href="./gallery.html">Gallery</a>
+                  </li>
+                  <li>
+                     <a href="./prices.html">Prices for services</a>
+                  </li>
+                  <li>
+                     <a href="./about.html">About us</a>
+                  </li>
+                  <li>
+                     <a href="./contact.html">Contact</a>
+                  </li>
+               </ul>
+            </nav>
+         </header>
+         <div class="head-content animate__animated animate__fadeInRight wow">
+            <div class="left-content">
+               <h2>Solid wood products</h2>
+               <p>Oak, beech, ash from<br><span>1700 CZK</span> per m3</p>
+               <div class="btn-wrap">
+                  <a class="btn-order" href="./error.html">Order</a>
+               </div>
+            </div>
+            <div class="right-content">
+               <div class="rc-chair animate__animated wow animate__zoomIn animate__faster animate__delay-1s">
+                  <img src="./04_images/01_header/chair.png" alt="Chair">
+               </div>
+               <div class="rc-ladder animate__animated wow animate__zoomIn animate__faster animate__delay-2s">
+                  <img src="./04_images/01_header/ladder.png" alt="Ladder">
+               </div>
+               <div class="rc-table animate__animated wow animate__zoomIn animate__faster animate__delay-3s">
+                  <img src="./04_images/01_header/table.png" alt="Table">
+               </div>
             </div>
          </div>
-         <nav class="menu">
-            <ul>
-               <li>
-                  <a href="./gallery.html">Gallery</a>
-               </li>
-               <li>
-                  <a href="./prices.html">Prices for services</a>
-               </li>
-               <li>
-                  <a href="./about.html">About us</a>
-               </li>
-               <li>
-                  <a href="./contact.html">Contact</a>
-               </li>
-            </ul>
-         </nav>
-      </header>
-   </section>
-   <script src="./js/wow.js"></script>
-   <script>
-      const wow = new WOW({
-         boxClass: 'wow', /* класс, который необходим для работы wow.js */
-         animateClass: 'animate__animated', /* класс, который будет автоматически добавляться анимируемым элементам при прокрутке страницы */
-         offset: 30, /* по-умолчанию установлено значение 0, то есть как только при прокрутке страницы, элемент достигает низа окна браузера проигрываться анимация, в данном случае анимация начнется на 30px выше от низа окна браузера */
-         mobile: true, /* если true, то на мобильных тоже будет анимация, если false, то на мобильных анимация отключается */
-         live: true /* если true, то анимация будет работать даже на динамически добавляемых элементах, если false, то только на тех элементах, которые были на странице при ее загрузке */
-      })
-      wow.init(); /* Инициализация плагина с установленными выше свойствами */
-   </script>
+      </section>
+
+      <!-- First containr - End - Header -->
+
+   </div>
+
+
+   <script src="./02_js/wow.js"></script>
+   <script src="./02_js/new-wow.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"></script>
+   <script src="./02_js/owl.carousel.min.js"></script>
+   <script src="./02_js/my-owl-carousel.js"></script>
+
 </body>
 
 </html>
