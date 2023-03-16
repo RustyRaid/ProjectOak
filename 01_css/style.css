@@ -612,6 +612,7 @@
    display: grid;
    row-gap: 45px;
    font-size: 0;
+   overflow: hidden;
 }
 
 .sixth-container .question-padd-home {
@@ -737,6 +738,10 @@
    background-color: #D5DCEE;
 }
 
+.sixth-container .question-content .question-bottom-content .right-info {
+   position: relative;
+}
+
 .sixth-container .question-content .question-bottom-content .right-info p {
    font-family: 'Inter';
    font-style: normal;
@@ -745,6 +750,13 @@
    line-height: 42px;
    text-align: right;
    color: #F5F5F5;
+}
+
+.sixth-container .question-content .question-bottom-content .right-info .slab img {
+   object-fit: cover;
+   position: absolute;
+   left: 220px;
+   top: 225px;
 }
 
 /* Ninth Container - Contact */
@@ -761,8 +773,6 @@
    display: grid;
    grid-template-columns: 480px 495px;
    column-gap: 140px;
-
-
 }
 
 .ninth-container .contact-content .contact-info {
