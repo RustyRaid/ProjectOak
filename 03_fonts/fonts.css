@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'KyivTypeSansMedium';
+    font-weight: normal;
+    font-style: normal;
+    src: local('KyivTypeSansMedium'), url(./KyivTypeSansMedium.woff);
+}
