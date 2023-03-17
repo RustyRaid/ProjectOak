@@ -1,3 +1,13 @@
+/* input,
+textarea,
+button,
+select {
+   font-family: inherit;
+   font-size: inherit;
+   color: inherit;
+   background-color: transparent;
+} */
+
 .wrapper {
    max-width: 1440px;
    width: 100%;
@@ -828,7 +838,6 @@
    display: grid;
    grid-template-columns: 600px 545px;
    column-gap: 45px;
-   font-family: 'Inter';
 }
 
 .sixth-container .question-content .question-bottom-content .left-info form {
@@ -847,6 +856,7 @@
    color: rgba(50, 53, 60, 1);
    outline: 0;
    padding-left: 47px;
+   font-family: 'Inter';
    font-weight: 500;
    font-size: 30px;
    line-height: 42px;
@@ -998,11 +1008,13 @@
 }
 
 .ninth-container .contact-content .contact-map iframe {
+   width: 495px;
+   height: 430px;
+   margin: 0px;
+   border: none;
+   overflow: hidden;
    border-radius: 42px;
 }
-
-/* Tenth Container - Error */
-
 
 /* Seventh Container - Footer */
 
