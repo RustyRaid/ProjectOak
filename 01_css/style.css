@@ -655,7 +655,7 @@
    text-align: center;
 }
 
-.fourth-container .advantage-content .btn-wrap .btn-work {
+.fourth-container .advantage-content .btn-wrap .btn-receive {
    font-family: 'Inter';
    font-weight: 700;
    font-size: 30px;
@@ -669,7 +669,7 @@
    display: inline-block;
 }
 
-.fourth-container .advantage-content .btn-wrap .btn-work:hover {
+.fourth-container .advantage-content .btn-wrap .btn-receive:hover {
    color: #8E3921;
    background-color: #D5DCEE;
 }
