@@ -23,16 +23,7 @@
    position: relative;
 }
 
-.first-container .banner-bg {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 908px;
-   /* width: 100%; */
-   height: 1080px;
-   background: url('../04_images/01_header/stack.png') 0 0 no-repeat;
-}
-
+.first-container .banner-bg,
 .first-container .banner-gr {
    position: absolute;
    top: 0;
@@ -40,27 +31,38 @@
    width: 908px;
    /* width: 100%; */
    height: 1080px;
+   border-radius: 11px 42px 42px 11px;
+}
+
+.first-container .banner-bg {
+   background: url('../04_images/01_header/stack.png') no-repeat;
+   background-position: -355px 0px;
+   background-size: cover;
+}
+
+.first-container .banner-gr {
    background: rgba(34, 32, 33, 0.49);
-   border-radius: 3px 62px 62px 0px;
 }
 
-.first-container .banner-er-bg {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 908px;
-   height: 1024px;
-   background: url('../04_images/09_error/error-stack.png') 0 0 no-repeat;
-}
-
+.first-container .banner-er-bg,
 .first-container .banner-er-gr {
    position: absolute;
    top: 0;
    left: 0;
    width: 908px;
+   /* width: 100%; */
    height: 1024px;
+   border-radius: 11px 42px 42px 11px;
+}
+
+.first-container .banner-er-bg {
+   background: url('../04_images/01_header/stack.png') no-repeat;
+   background-position: -355px 0px;
+   background-size: cover;
+}
+
+.first-container .banner-er-gr {
    background: rgba(34, 32, 33, 0.65);
-   border-radius: 3px 62px 62px 0px;
 }
 
 .first-container header {
@@ -128,7 +130,7 @@
    margin-top: 35px;
    display: grid;
    grid-template-columns: 635px 565px;
-   gap: 45px;
+   column-gap: 45px;
    padding-top: 45px;
    padding-bottom: 55px;
    background: #1E0C06;
@@ -140,6 +142,17 @@
 .head-content .left-content {
    padding-left: 50px;
    padding-top: 30px;
+   position: relative;
+}
+
+.head-content .left-content.separator::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 100%;
+   width: 1px;
+   background: #F5F5F5;
 }
 
 .head-content .left-content h2 {
@@ -228,7 +241,6 @@
    padding-bottom: 85px;
    align-items: center;
    position: relative;
-
 }
 
 .error-content .error-top {
@@ -754,6 +766,7 @@
 .fifth-container .about-content .right-content .about-item2 img {
    width: 335px;
    height: 335px;
+   box-shadow: 5px -5px 5px rgba(30, 12, 6, 1);
 }
 
 .fifth-container .about-content .right-content .about-item1 img {
