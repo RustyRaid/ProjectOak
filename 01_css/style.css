@@ -44,6 +44,25 @@
    border-radius: 3px 62px 62px 0px;
 }
 
+.first-container .banner-er-bg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 908px;
+   height: 1024px;
+   background: url('../04_images/09_error/error-stack.png') 0 0 no-repeat;
+}
+
+.first-container .banner-er-gr {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 908px;
+   height: 1024px;
+   background: rgba(34, 32, 33, 0.65);
+   border-radius: 3px 62px 62px 0px;
+}
+
 .first-container header {
    display: flex;
    justify-content: space-between;
@@ -115,6 +134,7 @@
    background: #1E0C06;
    filter: drop-shadow(0px 4px 52px rgba(245, 245, 245, 0.17));
    border-radius: 42px 0px 0px 42px;
+   position: relative;
 }
 
 .head-content .left-content {
@@ -178,38 +198,112 @@
 .head-content .right-content .rc-table img {
    width: 205px;
    height: 205px;
+   position: absolute;
    object-fit: cover;
+   object-position: center center;
    border-radius: 42px;
 }
 
 .head-content .right-content .rc-chair img {
-   position: absolute;
    left: 245px;
    top: 0px;
-   object-fit: cover;
-   object-position: center center;
 }
 
 .head-content .right-content .rc-ladder img {
-   position: absolute;
    left: 0px;
    top: 275px;
-   object-fit: cover;
-   object-position: center center;
 }
 
 .head-content .right-content .rc-table img {
-   position: absolute;
    left: 245px;
    top: 410px;
-   object-fit: cover;
-   object-position: center center;
+}
+
+.error-content {
+   margin-left: 170px;
+   margin-right: 170px;
+   display: flex;
+   flex-direction: column;
+   padding-top: 25px;
+   padding-bottom: 85px;
+   align-items: center;
+   position: relative;
+
+}
+
+.error-content .error-top {
+   display: grid;
+   grid-template-columns: 330px 360px 330px;
+   column-gap: 40px;
+   justify-content: space-between;
+   align-items: center;
+   justify-items: center;
+   margin-bottom: 10px;
+}
+
+.error-content .error-top .er-item1 h2,
+.error-content .error-top .er-item2 h2 {
+   font-family: 'KyivTypeSansMedium';
+   font-weight: 500;
+   font-size: 500px;
+   line-height: 455px;
+   color: #F5F5F5;
+   align-self: center;
+}
+
+.error-content .error-top .er-item2 {
+   background-image: url(../04_images/09_error/lines.png);
+   background-repeat: no-repeat;
+   background-position: center 62%;
+}
+
+.error-content h3 {
+   font-family: 'KyivTypeSansMedium';
+   font-weight: 500;
+   font-size: 90px;
+   line-height: 97px;
+   color: #F5F5F5;
+   margin-bottom: 36px;
+}
+
+.error-content p {
+   font-family: 'Inter';
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 36px;
+   text-align: center;
+   color: #FFDBBB;
+   margin-bottom: 42px;
+}
+
+.error-content .btn-wrap {
+   text-align: center;
+}
+
+.error-content .btn-wrap .btn-home {
+   font-family: 'Inter';
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36px;
+   color: #F5F5F5;
+   background: #728BAD;
+   border-radius: 42px;
+   padding: 11px 70px;
+   text-decoration: none;
+   transition: 0.8s;
+   display: inline-block;
+}
+
+.error-content .btn-wrap .btn-home:hover {
+   color: #8E3921;
+   background-color: #D5DCEE;
 }
 
 /* Second container - The Wood */
 
 .second-container .wood-content {
    display: grid;
+   grid-template-rows: 1fr;
    row-gap: 125px;
 }
 
@@ -304,7 +398,7 @@
 
 /* Third container - Our Work */
 
-.third-container .work-content {
+/* .third-container .work-content {
    display: grid;
    row-gap: 120px;
    margin-left: 80px;
@@ -313,19 +407,15 @@
 }
 
 .third-container .work-padd-home {
-   /* padding-top: 265px; */
    padding-bottom: 280px;
-
 }
 
 .third-container .work-padd-gallery {
    padding-top: 100px;
-   /* padding-bottom: 280px; */
 }
 
 .third-container .work-padd-about {
    padding-top: 205px;
-   /* padding-bottom: 280px; */
 }
 
 .third-container .work-content .work-top-content h2 {
@@ -367,11 +457,48 @@
 .third-container .work-content .work-bottom-content .slider .slider-top .l-arrow,
 .third-container .work-content .work-bottom-content .slider .slider-top .r-arrow {
    cursor: pointer;
+} */
+
+.third-container .work-content {
+   display: grid;
+   grid-template-rows: 1fr;
+   row-gap: 120px;
+   margin-left: 155px;
+   margin-right: 155px;
+   font-size: 0;
+}
+
+.third-container .work-padd-home {
+   padding-bottom: 280px;
+}
+
+.third-container .work-padd-gallery {
+   padding-top: 100px;
+}
+
+.third-container .work-padd-about {
+   padding-top: 205px;
+}
+
+.third-container .work-content .work-top-content h2 {
+   font-family: 'KyivTypeSansMedium';
+   font-weight: 500;
+   font-size: 90px;
+   line-height: 120px;
+   text-transform: uppercase;
+   padding-left: 90px;
+   color: #F5F5F5;
+}
+
+#owl-first {
+   display: block;
+   width: 1130px;
+   height: 754px;
 }
 
 /* Eighth Container - Price List */
 
-.eigth-container .price-content {
+/* .eigth-container .price-content {
    display: grid;
    row-gap: 115px;
    margin-left: 80px;
@@ -432,12 +559,52 @@
 .eigth-container .price-content .price-bottom-content .slider .slider-top .l-arrow,
 .eigth-container .price-content .price-bottom-content .slider .slider-top .r-arrow {
    cursor: pointer;
+} */
+
+.eigth-container .price-content {
+   display: grid;
+   grid-template-rows: 1fr;
+   row-gap: 115px;
+   margin-left: 163px;
+   margin-right: 163px;
+   font-size: 0;
+}
+
+.eigth-container .price-padd-price {
+   padding-top: 115px;
+}
+
+.eigth-container .price-content .price-top-content h2 {
+   font-family: 'KyivTypeSansMedium';
+   font-weight: 500;
+   font-size: 90px;
+   line-height: 120px;
+   text-transform: uppercase;
+   padding-left: 82px;
+   color: #F5F5F5;
+   margin: 0px;
+}
+
+#owl-second {
+   display: block;
+   width: 1114px;
+   height: 844px;
+}
+
+#owl-second .slide-item {
+   display: grid;
+   grid-template-columns: 610px 482px;
+   grid-template-rows: 500px 322px;
+   gap: 22px 22px;
+   justify-content: space-between;
+   align-items: center;
 }
 
 /* Fourth Container - Advantage */
 
 .fourth-container .advantage-content {
    display: grid;
+   grid-template-rows: 1fr;
    row-gap: 120px;
 }
 
@@ -608,6 +775,7 @@
 
 .sixth-container .question-content {
    display: grid;
+   grid-template-rows: 1fr;
    row-gap: 45px;
    font-size: 0;
    overflow: hidden;
@@ -817,6 +985,9 @@
 .ninth-container .contact-content .contact-map iframe {
    border-radius: 42px;
 }
+
+/* Tenth Container - Error */
+
 
 /* Seventh Container - Footer */
 
