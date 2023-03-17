@@ -853,6 +853,10 @@
 }
 
 .sixth-container .question-content .question-bottom-content .left-info form textarea {
+   font-family: 'Inter';
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 42px;
    margin-bottom: 40px;
    width: 100%;
    height: 257px;
@@ -864,9 +868,7 @@
    color: rgba(50, 53, 60, 1);
    outline: 0;
    padding-left: 47px;
-   font-weight: 500;
-   font-size: 30px;
-   line-height: 42px;
+   padding-top: 18px;
 }
 
 .sixth-container .question-content .question-bottom-content .left-info form input:focus,
