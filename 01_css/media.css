@@ -6,4 +6,83 @@
    .center2 {
       width: 95%;
    }
+
+}
+
+/* Медиа-запрос создан для демонстрации отображения иконки бургера и скрытия списка меню */
+
+@media screen and (max-width: 1100px) {
+
+   .first-container header .menu ul {
+      display: none;
+   }
+
+   .first-container header .menu .burger {
+      display: block;
+   }
+}
+
+/* Медиа-запрос создан для демонстрации скролла и примененных к нему стлиевых свойств.
+Также в footer меняется текстовая часть от desktop-active к mobile-active*/
+
+@media screen and (max-width: 960px) {
+
+   .second-container .wood-content .wood-bottom-content {
+      overflow-x: scroll;
+   }
+
+   .second-container .wood-content .wood-bottom-content::-webkit-scrollbar {
+      height: 6px;
+   }
+
+   /* Track */
+   .second-container .wood-content .wood-bottom-content::-webkit-scrollbar-track {
+      background-color: rgba(50, 53, 60, 0.75);
+   }
+
+   /* Handle */
+   .second-container .wood-content .wood-bottom-content::-webkit-scrollbar-thumb {
+      border: 2px solid rgba(50, 53, 60, 0.75);
+      background-color: rgba(176, 180, 189, 0.75);
+
+   }
+
+   /* Handle on hover */
+   .second-container .wood-content .wood-bottom-content::-webkit-scrollbar-thumb:hover {
+      background: rgb(85, 85, 85);
+   }
+
+   .second-container .wood-content .wood-bottom-content .wood-item {
+      flex-shrink: 0;
+      margin-right: 100px;
+   }
+
+   .sixth-container .question-content .question-bottom-content .right-info .slab img {
+      display: none;
+   }
+
+
+   footer .seventh-container .footer-top .second-item {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+      color: #F5F5F5;
+   }
+
+   footer .seventh-container .footer-top .third-item .desktop-active {
+      display: none;
+   }
+
+   footer .seventh-container .footer-top .third-item .mobile-active {
+      display: block;
+   }
+
+   footer .seventh-container .footer-bottom {
+      font-family: 'Saira';
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 15px;
+      color: #F5F5F5;
+   }
 }

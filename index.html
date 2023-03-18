@@ -16,8 +16,8 @@
    <link rel="stylesheet" href="./01_css/owl.carousel.min.css">
    <link rel="stylesheet" href="./01_css/owl.theme.default.min.css">
    <link rel="stylesheet" href="./01_css/reset.css">
-   <link rel="stylesheet" href="./01_css/media.css">
    <link rel="stylesheet" href="./01_css/style.css">
+   <link rel="stylesheet" href="./01_css/media.css">
 </head>
 
 <body>
@@ -56,6 +56,9 @@
                      <a href="./contact.html" title="Contact">Contact</a>
                   </li>
                </ul>
+               <div class="burger">
+                  <img src="./04_images/01_header/burger.svg" alt="Burger">
+               </div>
             </nav>
          </header>
          <div class="head-content animate__animated animate__fadeInRight wow">
@@ -70,10 +73,10 @@
                <div class="rc-chair animate__animated wow animate__zoomIn animate__faster animate__delay-1s">
                   <img src="./04_images/01_header/chair.png" alt="Chair">
                </div>
-               <div class="rc-ladder animate__animated wow animate__zoomIn animate__faster animate__delay-2s">
+               <div class="rc-ladder animate__animated wow animate__zoomIn animate__faster animate__delay-3s">
                   <img src="./04_images/01_header/ladder.png" alt="Ladder">
                </div>
-               <div class="rc-table animate__animated wow animate__zoomIn animate__faster animate__delay-3s">
+               <div class="rc-table animate__animated wow animate__zoomIn animate__faster animate__delay-2s">
                   <img src="./04_images/01_header/table.png" alt="Table">
                </div>
             </div>
@@ -129,26 +132,6 @@
             <div class="work-top-content">
                <h2>Our work</h2>
             </div>
-            <!-- <div class="work-bottom-content">
-               <div class="slider">
-                  <div class="slider-top">
-                     <div class="l-arrow">
-                        <img src="./04_images/03_work/left-arrow.svg" alt="Left Arrow">
-                     </div>
-                     <div class="slide-item">
-                        <img src="./04_images/03_work/slide01.png" alt="Slide1">
-                     </div>
-                     <div class="r-arrow">
-                        <img src="./04_images/03_work/right-arrow.svg" alt="Right Arrow">
-                     </div>
-                  </div>
-                  <div class="slider-bottom">
-                     <span class="l-point"><img src="./04_images/03_work/left-point.svg" alt="Left Point"></span>
-                     <span class="m-point"><img src="./04_images/03_work/middle-point.svg" alt="Middle Point"></span>
-                     <span class="r-point"><img src="./04_images/03_work/right-point.svg" alt="Right Point"></span>
-                  </div>
-               </div>
-            </div> -->
 
             <div id="owl-first" class="owl-carousel owl-theme">
                <div class="item"><img src="./04_images/03_work/slide01.png" alt="Slide1"></div>
@@ -224,13 +207,14 @@
                <div class="left-info">
                   <form action="./error.html" method="get">
                      <div>
-                        <input type="text" placeholder="Your name" name="yourName">
+                        <input type="text" placeholder="Your name" name="yourName" autocomplete="off">
                      </div>
                      <div>
-                        <input type="tel" placeholder="Your telephone number" name="tel">
+                        <input type="tel" placeholder="Your telephone number" name="tel" autocomplete="off">
                      </div>
                      <div>
-                        <textarea name="question" cols="30" rows="4" placeholder="Your question"></textarea>
+                        <textarea name="question" cols="30" rows="4" placeholder="Your question"
+                           autocomplete="off"></textarea>
                      </div>
                      <button type="submit" title="Send">
                         Send
