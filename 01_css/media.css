@@ -20,6 +20,10 @@
    .first-container header .menu .burger {
       display: block;
    }
+
+   .first-container header .menu .burger img {
+      width: 46px;
+   }
 }
 
 /* Медиа-запрос создан для демонстрации скролла и примененных к нему стлиевых свойств.
@@ -60,7 +64,6 @@
    .sixth-container .question-content .question-bottom-content .right-info .slab img {
       display: none;
    }
-
 
    footer .seventh-container .footer-top .second-item {
       font-family: 'Montserrat';

@@ -1,0 +1,6 @@
+В проекте выполнена десктопная часть.
+В файле с адаптивом присутсвуют медиа-запросы для демонстрации некоторых принятых решений с комментариями
+
+https://www.figma.com/file/vFZBqwoCzUqCwsrYDBOBag/wood-product-services-website-(Community)-(Copy)?node-id=53-1280&t=1I57yzDnf7J79Ggj-0
+
+https://rustyraid.github.io/ProjectOak/
